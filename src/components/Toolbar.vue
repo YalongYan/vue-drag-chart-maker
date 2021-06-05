@@ -3,7 +3,7 @@
         <div class="toolbar">
             <el-button @click="undo">撤消</el-button>
             <el-button @click="redo">重做</el-button>
-            <label for="input" class="insert">插入图片</label>
+            <label for="input" class="insert">插入背景图片</label>
             <input type="file" @change="handleFileChange" id="input" hidden />
             <el-button @click="preview" style="margin-left: 10px;">预览</el-button>
             <el-button @click="save">保存</el-button>

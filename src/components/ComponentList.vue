@@ -1,5 +1,13 @@
 <template>
     <div @dragstart="handleDragStart" class="component-list">
+        <div style="text-align: center;
+            width: 100%;
+            border-bottom: 1px solid #d2cbcb;
+            font-size: 14px;
+            padding-bottom: 10px;"
+        >
+            组件列表
+        </div>
         <div v-for="(item, index) in componentList" :key="index" class="list" draggable 
         :data-index="index">
         <img class="imgList" :src="item.propValue" :index="index">

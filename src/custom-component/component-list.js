@@ -18,7 +18,7 @@ const list = [
         label: '图片1', 
         icon: 'tupian',
         propValue: require('@/assets/img/1.png'),
-        requestUrl: 'xxx',
+        requestUrl: 'http:yidian-inc.com/getList',
         style: {
             width: 300,
             height: 200,
@@ -30,7 +30,7 @@ const list = [
         label: '图片2', 
         icon: 'tupian',
         propValue: require('@/assets/img/2.gif'),
-        requestUrl: '',
+        requestUrl: 'http:yidian-inc.com/getList',
         style: {
             width: 300,
             height: 200,
@@ -42,7 +42,7 @@ const list = [
         label: '图片3', 
         icon: 'tupian',
         propValue: require('@/assets/img/3.png'),
-        requestUrl: '',
+        requestUrl: 'http:yidian-inc.com/getList',
         style: {
             width: 300,
             height: 200,
@@ -54,7 +54,7 @@ const list = [
         label: '图片4', 
         icon: 'tupian',
         propValue: require('@/assets/img/4.png'),
-        requestUrl: '',
+        requestUrl: 'http:yidian-inc.com/getList',
         style: {
             width: 300,
             height: 200,
