@@ -21,11 +21,11 @@
                         <AttrList v-if="curComponent" />
                         <p v-else class="placeholder">请选择组件</p>
                     </el-tab-pane>
-                    <el-tab-pane label="动画" name="animation">
+                    <el-tab-pane :disabled="true" label="动画" name="animation">
                         <AnimationList v-if="curComponent" />
                         <p v-else class="placeholder">请选择组件</p>
                     </el-tab-pane>
-                    <el-tab-pane label="事件" name="events">
+                    <el-tab-pane :disabled="true" label="事件" name="events">
                         <EventList v-if="curComponent" />
                         <p v-else class="placeholder">请选择组件</p>
                     </el-tab-pane>
@@ -42,6 +42,8 @@ import AttrList from '@/components/AttrList' // 右侧属性列表
 import AnimationList from '@/components/AnimationList' // 右侧动画列表
 import EventList from '@/components/EventList' // 右侧事件列表
 import componentList from '@/custom-component/component-list' // 左侧列表数据
+// import Column from '@/chartComponents/Column'
+// import ColumnVertical from '@/chartComponents/ColumnVertical'
 import Toolbar from '@/components/Toolbar'
 import { deepCopy } from '@/utils/utils'
 import { mapState } from 'vuex'
@@ -49,11 +51,17 @@ import generateID from '@/utils/generateID'
 import { listenGlobalKeyDown } from '@/utils/shortcutKey'
 
 export default {
-    components: { Editor, ComponentList, AttrList, AnimationList, EventList, Toolbar },
+    components: {
+        Toolbar, Editor, ComponentList, AttrList, AnimationList, EventList,
+    },
     data() {
         return {
             activeName: 'attr',
             reSelectAnimateIndex: undefined,
+            img1: require('@/assets/img/1.png'),
+            img2: require('@/assets/img/2.gif'),
+            img3: require('@/assets/img/3.png'),
+            img4: require('@/assets/img/4.png'),
         }
     },
     computed: mapState([
@@ -133,7 +141,7 @@ export default {
         .left {
             position: absolute;
             height: 100%;
-            width: 200px;
+            width: 150px;
             left: 0;
             top: 0;
             padding-top: 10px;
@@ -148,7 +156,7 @@ export default {
         }
 
         .center {
-            margin-left: 200px;
+            margin-left: 150px;
             margin-right: 262px;
             background: #f5f5f5;
             height: 100%;

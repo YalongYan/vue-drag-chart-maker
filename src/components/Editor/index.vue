@@ -10,7 +10,6 @@
     >
         <!-- 网格线 -->
         <Grid />
-        
         <!--页面组件列表展示-->
         <Shape v-for="(item, index) in componentData"
             :defaultStyle="item.style"
@@ -48,6 +47,7 @@
         <MarkLine />
         <!-- 选中区域 -->
         <Area :start="start" :width="width" :height="height" v-show="isShowArea" />
+        <!-- {{curComponent}} -->
     </div>
 </template>
 

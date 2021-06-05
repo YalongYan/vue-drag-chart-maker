@@ -1,7 +1,9 @@
-<!-- TODO: 这个页面后续将用 JSX 重构 -->
 <template>
     <div class="attr-list">
         <el-form>
+            <el-form-item label="数据接口地址" v-if="curComponent && curComponent['requestUrl'] ">
+               <el-input v-model="curComponent.requestUrl" />
+            </el-form-item>
             <el-form-item v-for="(key, index) in styleKeys.filter(item => item != 'rotate')" :key="index" :label="map[key]">
                 <el-color-picker v-if="key == 'borderColor'" v-model="curComponent.style[key]"></el-color-picker>
                 <el-color-picker v-else-if="key == 'color'" v-model="curComponent.style[key]"></el-color-picker>
@@ -86,6 +88,7 @@ export default {
             ],
             selectKey: ['textAlign', 'borderStyle', 'verticalAlign'],
             map: {
+                requestUrl: '数据接口地址',
                 left: 'x 坐标',
                 top: 'y 坐标',
                 height: '高',
@@ -108,7 +111,6 @@ export default {
     },
     computed: {
         styleKeys() {
-            console.log(this.$store.state.curComponent.style)
             return this.$store.state.curComponent? Object.keys(this.$store.state.curComponent.style) : []
         },
         curComponent() {

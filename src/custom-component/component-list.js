@@ -14,46 +14,11 @@ export const commonAttr = {
 // 编辑器左侧组件列表
 const list = [
     {
-        component: 'v-text',
-        label: '文字',
-        propValue: '双击编辑文字',
-        icon: 'wenben',
-        style: {
-            width: 200,
-            height: 22,
-            fontSize: 14,
-            fontWeight: 500,
-            lineHeight: '',
-            letterSpacing: 0,
-            textAlign: '',
-            color: '',
-        },
-    },
-    {
-        component: 'v-button', 
-        label: '按钮', 
-        propValue: '按钮',
-        icon: 'button',
-        style: {
-            width: 100,
-            height: 34,
-            borderWidth: 1,
-            borderColor: '',
-            borderRadius: '',
-            fontSize: 14,
-            fontWeight: 500,
-            lineHeight: '',
-            letterSpacing: 0,
-            textAlign: '',
-            color: '',
-            backgroundColor: '',
-        },
-    },
-    {
         component: 'Picture', 
-        label: '图片', 
+        label: '图片1', 
         icon: 'tupian',
-        propValue: require('@/assets/title.jpg'),
+        propValue: require('@/assets/img/1.png'),
+        requestUrl: 'xxx',
         style: {
             width: 300,
             height: 200,
@@ -61,24 +26,39 @@ const list = [
         },
     },
     {
-        component: 'rect-shape',
-        label: '矩形',
-        propValue: '&nbsp;',
-        icon: 'juxing',
+        component: 'Picture', 
+        label: '图片2', 
+        icon: 'tupian',
+        propValue: require('@/assets/img/2.gif'),
+        requestUrl: '',
         style: {
-            width: 200,
+            width: 300,
             height: 200,
-            fontSize: 14,
-            fontWeight: 500,
-            lineHeight: '',
-            letterSpacing: 0,
-            textAlign: 'center',
-            color: '',
-            borderColor: '#000',
-            borderWidth: 1,
-            backgroundColor: '',
-            borderStyle: 'solid',
-            verticalAlign: 'middle',
+            borderRadius: '',
+        },
+    },
+    {
+        component: 'Picture', 
+        label: '图片3', 
+        icon: 'tupian',
+        propValue: require('@/assets/img/3.png'),
+        requestUrl: '',
+        style: {
+            width: 300,
+            height: 200,
+            borderRadius: '',
+        },
+    },
+    {
+        component: 'Picture', 
+        label: '图片4', 
+        icon: 'tupian',
+        propValue: require('@/assets/img/4.png'),
+        requestUrl: '',
+        style: {
+            width: 300,
+            height: 200,
+            borderRadius: '',
         },
     },
 ]
@@ -88,5 +68,4 @@ for (let i = 0, len = list.length; i < len; i++) {
     item.style = { ...commonStyle, ...item.style }
     list[i] = { ...commonAttr, ...item }
 }
-
 export default list

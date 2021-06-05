@@ -98,7 +98,6 @@ export default {
                         }
                     })
                 })
-
                 this.$store.commit('setComponentData', componentData)
                 this.$store.commit('setCanvasStyle', {
                     ...this.canvasStyleData,
