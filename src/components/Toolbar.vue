@@ -27,7 +27,7 @@
         </div>
 
         <!-- 预览 -->
-        <Preview v-model="isShowPreview" @change="handlePreviewChange" />
+        <!-- <Preview v-model="isShowPreview" @change="handlePreviewChange" /> -->
     </div>
 </template>
 
@@ -35,13 +35,13 @@
 import generateID from '@/utils/generateID'
 import toast from '@/utils/toast'
 import { mapState } from 'vuex'
-import Preview from '@/components/Editor/Preview'
+// import Preview from '@/components/Editor/Preview'
 import { commonStyle, commonAttr } from '@/custom-component/component-list'
 import eventBus from '@/utils/eventBus'
 import { deepCopy } from '@/utils/utils'
 
 export default {
-    components: { Preview },
+    // components: { Preview },
     data() {
         return {
             isShowPreview: false,
@@ -64,7 +64,7 @@ export default {
         'curComponent',
     ]),
     created() {
-        eventBus.$on('preview', this.preview)
+        // eventBus.$on('preview', this.preview)
         eventBus.$on('save', this.save)
         eventBus.$on('clearCanvas', this.clearCanvas)
 
@@ -172,8 +172,12 @@ export default {
         },
 
         preview() {
-            this.isShowPreview = true
-            this.$store.commit('setEditMode', 'preview')
+            localStorage.setItem('canvasData', JSON.stringify(this.componentData))
+            localStorage.setItem('canvasStyle', JSON.stringify(this.canvasStyleData))
+            let win = window.open('/#/preview', '_blank')
+            win.focus()
+            // this.isShowPreview = true
+            // this.$store.commit('setEditMode', 'preview')
         },
 
         save() {

@@ -20,6 +20,7 @@ export default {
     },
     methods: {
         drawChart() {
+            const that = this
             const data = [
                 { name: 'MODIFY', value: 138, washaway: 0.21014492753623193 },
                 { name: 'PRERELEASE', value: 109, washaway: 0.5596330275229358 },
@@ -107,7 +108,7 @@ export default {
             const chart = new Chart({
                 container: this.propValueItem.containerId,
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
             })
 
             chart.data(data)

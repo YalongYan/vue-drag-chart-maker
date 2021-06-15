@@ -18,6 +18,7 @@ export default {
     },
     methods: {
         drawChart() { 
+            const that = this
             const data = [
                 { type: '汽车', value: 34 },
                 { type: '建材家居', value: 85 },
@@ -32,8 +33,12 @@ export default {
             ]
             const chart = new Chart({
                 container: this.propValueItem.containerId,
+                // theme: 'dark', 
+                theme: {
+                    defaultColor: 'red',
+                },
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
             })
             chart.data(data)
             chart.scale({

@@ -19,6 +19,7 @@ export default {
     },
     methods: {
         drawChart() {
+            const that = this
             const data = [
                 { month: 'Jan', city: 'Tokyo', temperature: 7 },
                 { month: 'Jan', city: 'London', temperature: 3.9 },
@@ -49,7 +50,7 @@ export default {
             const chart = new Chart({
                 container: this.propValueItem.containerId,
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
             })
 
             chart.data(data)

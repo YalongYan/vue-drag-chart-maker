@@ -10,6 +10,7 @@
         </div>
         <div v-for="(item, index) in componentList" :key="index" class="list" draggable 
         :data-index="index">
+        <div class="title">{{item.title}}</div>
         <!-- <component/> -->
         <img class="imgList" :src="item.propValue" :index="index">
         </div>
@@ -44,6 +45,10 @@ export default {
         width: 100%;
         cursor: pointer;
     }
+    .title {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
 
     .list {
         // width: 45%;
@@ -53,7 +58,7 @@ export default {
         text-align: center;
         color: #333;
         padding: 2px 5px;
-        display: flex;
+        // display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 10px;

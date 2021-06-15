@@ -19,6 +19,7 @@ export default {
     },
     methods: {
         drawChart() {
+            const that = this
             const data = [
                 { type: '未知', value: 654, percent: 0.02 },
                 { type: '17 岁以下', value: 654, percent: 0.02 },
@@ -32,7 +33,7 @@ export default {
             const chart = new Chart({
                 container: this.propValueItem.containerId,
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
                 padding: [50, 20, 50, 20],
             })
             chart.data(data)

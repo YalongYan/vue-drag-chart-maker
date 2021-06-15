@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         drawChart() {
-          let that = this
+            const that = this
             registerAnimation('label-appear', (element, animateCfg, cfg) => {
                 const label = element.getChildren()[0]
                 const coordinate = cfg.coordinate
@@ -88,7 +88,7 @@ export default {
                         chart = new Chart({
                             container: that.propValueItem.containerId,
                             autoFit: true,
-                            height: 500,
+                            height: that.propValueItem.style.height,
                             padding: [20, 60],
                         })
                         // @ts-ignore
@@ -120,28 +120,22 @@ export default {
                         .interval()
                         .position('city*value')
                         .color('city')
-                        .label('value', (value) => 
-                        // eslint-disable-next-line
-                        // if (value !== 0) {
-                            ({
-                                animate: {
-                                    appear: {
-                                        animation: 'label-appear',
-                                        delay: 0,
-                                        duration: 1000,
-                                        easing: 'easeLinear',
-                                    },
-                                    update: {
-                                        animation: 'label-update',
-                                        duration: 1000,
-                                        easing: 'easeLinear',
-                                    },
+                        .label('value', () => ({
+                            animate: {
+                                appear: {
+                                    animation: 'label-appear',
+                                    delay: 0,
+                                    duration: 1000,
+                                    easing: 'easeLinear',
                                 },
-                                offset: 5,
-                            }),
-                            // eslint-disable-next-line
-                            // }
-                        )
+                                update: {
+                                    animation: 'label-update',
+                                    duration: 1000,
+                                    easing: 'easeLinear',
+                                },
+                            },
+                            offset: 5,
+                        }))
                         .animate({
                             appear: {
                                 duration: 1000,

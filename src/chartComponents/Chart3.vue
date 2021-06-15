@@ -19,6 +19,7 @@ export default {
     },
     methods: {
         drawChart() { 
+            const that = this
             const data = [
                 { type: '收纳', value: 340, cat: '办公用品' },
                 { type: '笔', value: 20760, cat: '办公用品' },
@@ -33,7 +34,7 @@ export default {
             const chart = new Chart({
                 container: this.propValueItem.containerId,
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
                 padding: [20, 0, 50, 100],
             })
             chart.data(data)

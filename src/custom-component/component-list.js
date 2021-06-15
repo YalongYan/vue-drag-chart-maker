@@ -16,7 +16,7 @@ const list = [
     {
         component: 'Picture', 
         containerId: 'Chart1',
-        label: '图片1', 
+        title: '10日内访问量', 
         propValue: require('@/assets/img/1.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -28,7 +28,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart2',
-        label: '图片2', 
+        title: '10日内访问量2', 
         propValue: require('@/assets/img/10.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -40,7 +40,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart3',
-        label: '图片3', 
+        title: '10日内访问量3', 
         propValue: require('@/assets/img/3.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -52,7 +52,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart4',
-        label: '图片4', 
+        title: '10日内访问量4', 
         propValue: require('@/assets/img/4.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -64,7 +64,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart5',
-        label: '图片5', 
+        title: '10日内访问量5', 
         propValue: require('@/assets/img/5.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -76,7 +76,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart6',
-        label: '图片6', 
+        title: '10日内访问量6', 
         propValue: require('@/assets/img/6.gif'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -88,7 +88,7 @@ const list = [
     // {
     //     component: 'Picture',
     //     containerId: 'Chart7',
-    //     label: '图片7', 
+    //     title: '10日内访问量7', 
     //     propValue: require('@/assets/img/7.png'),
     //     requestUrl: 'http:yidian-inc.com/getList',
     //     style: {
@@ -100,7 +100,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart8',
-        label: '图片8', 
+        title: '10日内访问量8', 
         propValue: require('@/assets/img/8.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -112,7 +112,7 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart9',
-        label: '图片9', 
+        title: '10日内访问量9', 
         propValue: require('@/assets/img/9.png'),
         requestUrl: 'http:yidian-inc.com/getList',
         style: {
@@ -124,7 +124,7 @@ const list = [
     // {
     //     component: 'Picture',
     //     containerId: 'Chart10',
-    //     label: '图片10', 
+    //     title: '10日内访问量10', 
     //     propValue: require('@/assets/img/2.gif'),
     //     requestUrl: 'http:yidian-inc.com/getList',
     //     style: {

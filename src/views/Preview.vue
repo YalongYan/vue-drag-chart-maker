@@ -1,6 +1,6 @@
 <template>
     <div class="bg">
-      <div v-for="(item, index) in localdData" :key="index" class="list" draggable :data-index="index">
+      <div v-for="(item, index) in localdData" :style="changeStyle(item.style)" :key="index" >
           <component :propValueItem="item" :is="item.containerId"/>
       </div>
     </div>
@@ -20,6 +20,17 @@ export default {
         },
     },
     methods: {
+        changeStyle(obj) {
+            const newObj = {
+                width: obj.width + 'px',
+                height: obj.height + 'px',
+                top: obj.top + 'px',
+                left: obj.left + 'px',
+                position: 'absolute',
+            }
+            const result = { ...obj, ...newObj }
+            return result
+        },
     },
 }
 </script>
@@ -27,7 +38,7 @@ export default {
 <style lang="scss" scoped>
 .bg {
     width: 100%;
-    height: 100%;
+    height: 740px;
     position: relative;
 }
 </style>

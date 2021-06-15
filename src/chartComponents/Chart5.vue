@@ -19,6 +19,7 @@ export default {
     },
     methods: {
         drawChart() {
+            const that = this
             function getTypeColor(type) {
                 if (type === '转基因作物种植面积') { return '#1890ff' }
                 if (type === '耕地总面积') { return '#2fc25b' }
@@ -91,7 +92,7 @@ export default {
             const chart = new Chart({
                 container: this.propValueItem.containerId,
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
                 padding: [20, 20, 20, 70],
             })
 

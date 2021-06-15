@@ -19,6 +19,7 @@ export default {
     },
     methods: {
         drawChart() {
+            const that = this
             const data = [
                 { name: 'London', 月份: 'Jan.', 月均降雨量: 18.9 },
                 { name: 'London', 月份: 'Feb.', 月均降雨量: 28.8 },
@@ -41,7 +42,7 @@ export default {
             const chart = new Chart({
                 container: this.propValueItem.containerId,
                 autoFit: true,
-                height: 500,
+                height: that.propValueItem.style.height,
             })
 
             chart.data(data)
@@ -80,5 +81,9 @@ export default {
 img {
     width: 100%;
     height: 100%;
+}
+.aaa {
+    width: 200px;
+    height: 200px;
 }
 </style>
