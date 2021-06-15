@@ -10,6 +10,7 @@
         </div>
         <div v-for="(item, index) in componentList" :key="index" class="list" draggable 
         :data-index="index">
+        <!-- <component/> -->
         <img class="imgList" :src="item.propValue" :index="index">
         </div>
     </div>
@@ -55,6 +56,8 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 10px;
+        border: 1px solid #ece6e6;
 
         &:active {
             cursor: grabbing;

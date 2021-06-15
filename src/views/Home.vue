@@ -145,6 +145,7 @@ export default {
             left: 0;
             top: 0;
             padding-top: 10px;
+            overflow-y: auto;
         }
 
         .right {
