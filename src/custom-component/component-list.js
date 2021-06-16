@@ -19,6 +19,11 @@ const list = [
         title: '10日内访问量', 
         propValue: require('@/assets/img/1.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
@@ -85,18 +90,6 @@ const list = [
             borderRadius: '',
         },
     },
-    // {
-    //     component: 'Picture',
-    //     containerId: 'Chart7',
-    //     title: '10日内访问量7', 
-    //     propValue: require('@/assets/img/7.png'),
-    //     requestUrl: 'http:yidian-inc.com/getList',
-    //     style: {
-    //         width: 300,
-    //         height: 200,
-    //         borderRadius: '',
-    //     },
-    // },
     {
         component: 'Picture',
         containerId: 'Chart8',
@@ -109,30 +102,6 @@ const list = [
             borderRadius: '',
         },
     },
-    {
-        component: 'Picture',
-        containerId: 'Chart9',
-        title: '10日内访问量9', 
-        propValue: require('@/assets/img/9.png'),
-        requestUrl: 'http:yidian-inc.com/getList',
-        style: {
-            width: 300,
-            height: 200,
-            borderRadius: '',
-        },
-    },
-    // {
-    //     component: 'Picture',
-    //     containerId: 'Chart10',
-    //     title: '10日内访问量10', 
-    //     propValue: require('@/assets/img/2.gif'),
-    //     requestUrl: 'http:yidian-inc.com/getList',
-    //     style: {
-    //         width: 300,
-    //         height: 200,
-    //         borderRadius: '',
-    //     },
-    // },
 ]
 
 for (let i = 0, len = list.length; i < len; i++) {

@@ -1,9 +1,28 @@
 <template>
     <div class="attr-list">
         <el-form>
+            <div class="itemHeaderCtn">数据</div>
+            <div class="divderCtn"></div>
             <el-form-item label="数据接口地址" v-if="curComponent && curComponent['requestUrl'] ">
                <el-input v-model="curComponent.requestUrl" />
             </el-form-item>
+            <div class="itemHeaderCtn">标题</div>
+            <div class="divderCtn"></div>
+            <el-form-item label="内容" v-if="curComponent && curComponent['header'] ">
+               <el-input v-model="curComponent.header.value" />
+            </el-form-item>
+            <el-form-item label="字体大小" v-if="curComponent && curComponent['header'] ">
+               <el-input v-model="curComponent.header.fontSize" />
+            </el-form-item>
+            <el-form-item label="对齐方式" v-if="curComponent && curComponent['header'] ">
+                <el-select v-model="curComponent.header.textAlign">
+                    <el-option :key="'left'" :label="'左对齐'" :value="'left'"></el-option>
+                    <el-option :key="'center'" :label="'居中'" :value="'center'"></el-option>
+                    <el-option :key="'right'" :label="'右对齐'" :value="'right'"></el-option>
+                </el-select>
+            </el-form-item>
+            <div class="itemHeaderCtn">样式</div>
+            <div class="divderCtn"></div>
             <el-form-item v-for="(key, index) in styleKeys.filter(item => item != 'rotate')" :key="index" :label="map[key]">
                 <el-color-picker v-if="key == 'borderColor'" v-model="curComponent.style[key]"></el-color-picker>
                 <el-color-picker v-else-if="key == 'color'" v-model="curComponent.style[key]"></el-color-picker>
@@ -126,5 +145,16 @@ export default {
     padding: 20px;
     padding-top: 0;
     height: 100%;
+    .divderCtn {
+        background-color: #DCDFE6;
+        position: relative;
+        height: 1px;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .itemHeaderCtn {
+        font-size: '14px';
+        color: '#606266';
+    }
 }
 </style>

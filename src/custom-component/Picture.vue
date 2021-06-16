@@ -1,6 +1,10 @@
 <template>
     <div style="overflow: hidden">
+        <div :style="{textAlign: element.header.textAlign, fontSize: element.header.fontSize}">
+            {{element.header.value || ''}}
+        </div>
         <img :src="propValue">
+        {{element}}
     </div>
 </template>
 
@@ -9,6 +13,10 @@ export default {
     props: {
         propValue: {
             type: String,
+            require: true,
+        },
+        element: {
+            type: Object,
             require: true,
         },
     },

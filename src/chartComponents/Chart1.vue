@@ -1,5 +1,15 @@
 <template>
-    <div :id="propValueItem.containerId"></div>
+    <div>
+        <div :style="{
+            textAlign: propValueItem.header.textAlign,
+            fontSize: propValueItem.header.fontSize, 
+            marginBottom: '10px',
+            color: 'gray',
+        }">
+            {{propValueItem.header.value}}
+        </div>   
+        <div :id="propValueItem.containerId"></div>
+    </div>
 </template>
 
 <script>
