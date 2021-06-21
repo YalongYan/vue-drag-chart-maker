@@ -29,7 +29,6 @@
                 :element="item"
                 :id="'component' + item.id"
             />
-
             <component
                 v-else
                 class="component"

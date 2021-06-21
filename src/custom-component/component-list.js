@@ -31,6 +31,40 @@ const list = [
         },
     },
     {
+        component: 'Picture', 
+        containerId: 'Table',
+        title: '10日内访问量', 
+        propValue: require('@/assets/img/table.png'),
+        requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
+        style: {
+            width: 300,
+            height: 200,
+            borderRadius: '',
+        },
+    },
+    {
+        component: 'Picture', 
+        containerId: 'BannerItem',
+        title: '10日内访问量', 
+        propValue: require('@/assets/img/bannerItem.png'),
+        requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
+        style: {
+            width: 300,
+            height: 200,
+            borderRadius: '',
+        },
+    },
+    {
         component: 'Picture',
         containerId: 'Chart2',
         title: '10日内访问量2', 

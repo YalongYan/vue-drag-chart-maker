@@ -10,6 +10,8 @@ const components = [
     // 'Chart7',
     'Chart8',
     'Chart9',
+    'Table',
+    'BannerItem',
 ]
 
 components.forEach(key => {
