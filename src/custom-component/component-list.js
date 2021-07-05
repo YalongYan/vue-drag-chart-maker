@@ -70,6 +70,11 @@ const list = [
         title: '10日内访问量2', 
         propValue: require('@/assets/img/10.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
@@ -82,6 +87,11 @@ const list = [
         title: '10日内访问量3', 
         propValue: require('@/assets/img/3.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
@@ -94,6 +104,11 @@ const list = [
         title: '10日内访问量4', 
         propValue: require('@/assets/img/4.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
@@ -106,6 +121,11 @@ const list = [
         title: '10日内访问量5', 
         propValue: require('@/assets/img/5.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
@@ -118,6 +138,11 @@ const list = [
         title: '10日内访问量6', 
         propValue: require('@/assets/img/6.gif'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
@@ -130,6 +155,11 @@ const list = [
         title: '10日内访问量8', 
         propValue: require('@/assets/img/8.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        header: {
+            value: '我是标题',
+            textAlign: 'left',
+            fontSize: '14px',
+        },
         style: {
             width: 300,
             height: 200,
