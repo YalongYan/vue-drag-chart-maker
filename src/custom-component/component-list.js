@@ -60,7 +60,7 @@ const list = [
         dataType: '', // 1 json 2 接口
         dataSourceJson: '',
         header: {
-            value: '我是标题',
+            value: '今日概览',
             textAlign: 'left',
             fontSize: '14px',
         },
@@ -174,7 +174,7 @@ const list = [
         dataType: '', // 1 json 2 接口
         dataSourceJson: '',
         header: {
-            value: '我是标题',
+            value: '近7日push数据',
             textAlign: 'left',
             fontSize: '14px',
         },
