@@ -1,8 +1,6 @@
 <template>
     <div class="bg">
-      <div v-for="(item, index) in localdData" :style="changeStyle(item.style)" :key="index" >
-          <component :propValueItem="item" :is="item.containerId"/>
-      </div>
+     sssss
     </div>
 </template>
 

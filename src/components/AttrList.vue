@@ -3,7 +3,16 @@
         <el-form>
             <div class="itemHeaderCtn">数据</div>
             <div class="divderCtn"></div>
-            <el-form-item label="数据接口地址" v-if="curComponent && curComponent['requestUrl'] ">
+            <el-form-item label="数据源类型" v-if="curComponent">
+                <el-select v-model="curComponent.dataType">
+                    <el-option :key="'1'" :label="'Json'" :value="'1'"></el-option>
+                    <el-option :key="'2'" :label="'接口'" :value="'2'"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item  label="json源数据" v-if="curComponent && curComponent['dataType'] === '1' ">
+               <el-input type="textarea" v-model="curComponent.dataSourceJson" />
+            </el-form-item>
+            <el-form-item  label="数据接口地址" v-if="curComponent && curComponent['dataType'] === '2' ">
                <el-input v-model="curComponent.requestUrl" />
             </el-form-item>
             <div class="itemHeaderCtn">标题</div>

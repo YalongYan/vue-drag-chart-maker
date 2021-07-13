@@ -16,9 +16,11 @@ const list = [
     {
         component: 'Picture', 
         containerId: 'Chart1',
-        title: '10日内访问量', 
+        title: '条形图', 
         propValue: require('@/assets/img/1.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -33,9 +35,11 @@ const list = [
     {
         component: 'Picture', 
         containerId: 'Table',
-        title: '10日内访问量', 
+        title: 'table表格', 
         propValue: require('@/assets/img/table.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -50,9 +54,11 @@ const list = [
     {
         component: 'Picture', 
         containerId: 'BannerItem',
-        title: '10日内访问量', 
+        title: 'Banner卡片', 
         propValue: require('@/assets/img/bannerItem.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -67,9 +73,11 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart2',
-        title: '10日内访问量2', 
+        title: '对比柱状图', 
         propValue: require('@/assets/img/10.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -84,9 +92,11 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart3',
-        title: '10日内访问量3', 
+        title: '对比条形图', 
         propValue: require('@/assets/img/3.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -101,9 +111,11 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart4',
-        title: '10日内访问量4', 
+        title: '柱状图', 
         propValue: require('@/assets/img/4.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -118,9 +130,11 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart5',
-        title: '10日内访问量5', 
+        title: '三列对比图', 
         propValue: require('@/assets/img/5.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -135,9 +149,11 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart6',
-        title: '10日内访问量6', 
+        title: '动态条形图', 
         propValue: require('@/assets/img/6.gif'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',
@@ -152,9 +168,11 @@ const list = [
     {
         component: 'Picture',
         containerId: 'Chart8',
-        title: '10日内访问量8', 
+        title: '折线图', 
         propValue: require('@/assets/img/8.png'),
         requestUrl: 'http:yidian-inc.com/getList',
+        dataType: '', // 1 json 2 接口
+        dataSourceJson: '',
         header: {
             value: '我是标题',
             textAlign: 'left',

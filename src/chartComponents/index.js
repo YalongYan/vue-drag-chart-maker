@@ -10,6 +10,7 @@ const components = [
     // 'Chart7',
     'Chart8',
     'Chart9',
+    'Chart123',
     'Table',
     'BannerItem',
 ]

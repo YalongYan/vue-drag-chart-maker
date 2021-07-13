@@ -14,6 +14,11 @@ const routes = [
         name: 'Preview',
         component: () => import('@/views/Preview'),
     },
+    {
+        path: '/personal',
+        name: 'Personal',
+        component: () => import('@/views/Personal'),
+    },
 ]
 
 export default new Router({
